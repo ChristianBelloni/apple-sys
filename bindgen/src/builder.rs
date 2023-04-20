@@ -64,6 +64,9 @@ impl Builder {
         builder = builder
             .clang_args(&clang_args)
             .layout_tests(self.config.layout_tests)
+            .objc_extern_crate(true)
+            .block_extern_crate(true)
+            .generate_block(true)
             .rustfmt_bindings(true);
 
         for opaque_type in &self.config.opaque_types {
