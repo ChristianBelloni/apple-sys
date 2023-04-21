@@ -15,7 +15,7 @@ include = ["/src", "/*.rs"]
 
 [dependencies]
 objc = { version = "0.2.7", optional = true }
-
+block = { version = "*" }
 [build-dependencies]
 apple-bindgen = { path = "../bindgen", version = "0.2.0", default-features=false }
 apple-sdk = "0.4.0"
